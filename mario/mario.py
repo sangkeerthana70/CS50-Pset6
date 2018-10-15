@@ -3,7 +3,7 @@ from cs50 import get_int
 #prompts user for a positive integer
 while True:
     height = get_int("Height: ")
-    if (height >= 1 and height < 23):
+    if (height >= 0 and height <= 23):
         break
 # prints rows = height of pyramid
 for i in range(height):
