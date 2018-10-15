@@ -8,8 +8,10 @@ while True:
         break
 # prints rows = height of pyramid
 for i in range(height):
+    # prints spaces for height minus i - 1
     for j in range(height-i-1):
         print(" ", end = "")
+    # prints # for height + 2
     for k in range (i + 2):
         print("#", end = "")
     print("")
