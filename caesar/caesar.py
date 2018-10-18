@@ -16,6 +16,7 @@ def main():
     for char in plain_text:
         if char.isupper():
             # calculate alphabetical index of each char in plain_text
+            # by using the ord function
             cipher_text += chr(((ord(char) - ord('A') + key) % 26) + ord('A'))
         elif char.islower():
             cipher_text += chr(((ord(char) - ord('a') + key) % 26) + ord('a'))
