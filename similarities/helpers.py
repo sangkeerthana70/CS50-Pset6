@@ -2,6 +2,18 @@ def lines(a, b):
     """Return lines in both a and b"""
 
     # TODO
+    # split strings in lines a and b with \n as delimiter and return it in an array
+    list_splitLinesA = a.splitlines()
+    list_splitLinesB = b.splitlines()
+
+    def  intersection(list_splitLinesA, list_splitLinesB):
+        return list(set(list_splitLinesA) & set(list_splitLinesB))
+    print(intersection(listA, listB))
+
+
+    for lines in splitLinesA
+
+
     return []
 
 
