@@ -10,13 +10,6 @@ def lines(a, b):
         return list(set(list_splitLinesA) & set(list_splitLinesB))
     print(intersection(listA, listB))
 
-
-    for lines in splitLinesA
-
-
-    return []
-
-
 def sentences(a, b):
     """Return sentences in both a and b"""
 
