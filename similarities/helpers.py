@@ -1,3 +1,5 @@
+from nltk.tokenize import sent_tokenize
+
 def lines(a, b):
     """Return lines in both a and b"""
 
@@ -14,7 +16,13 @@ def sentences(a, b):
     """Return sentences in both a and b"""
 
     # TODO
-    return []
+    # sent_tokenize splits a sentence ending with a period and returns it in a list
+    listA = sent_tokenize(a)
+    listB = sent_tokenize(b)
+    return(similarSentences(listA, listB))
+# function to return similar sentences
+def similarSentences(listA, listB):
+    return list(set(listA) & set(listB))
 
 
 def substrings(a, b, n):
