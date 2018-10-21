@@ -6,7 +6,13 @@
         <form action="/compare" enctype="multipart/form-data" method="post">
 
             <!-- TODO -->
-
+            <input type = "file" name = "file1">file1 <br />
+            <input type="file" name="file2">file2 <br />
+            <input type="radio" name="algorithm" value="lines">Compare Lines<br />
+            <input type="radio" name="algorithm" value="sentences">Compare Sentences<br />
+            <input type="radio" name="algorithm" value="substrings">Compare Substrings<br />
+            <input placeholder="of length n" type="number"/> <br />
+            <button class="btn btn-default" type="submit">Compare</button>
         </form>
     </div>
 

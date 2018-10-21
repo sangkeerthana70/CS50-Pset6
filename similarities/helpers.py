@@ -5,10 +5,10 @@ def lines(a, b):
     # split strings in lines a and b with \n as delimiter and return it in an array
     list_splitLinesA = a.splitlines()
     list_splitLinesB = b.splitlines()
+    return(intersection(list_splitLinesA, list_splitLinesB))
 
-    def  intersection(list_splitLinesA, list_splitLinesB):
-        return list(set(list_splitLinesA) & set(list_splitLinesB))
-    print(intersection(listA, listB))
+def  intersection(list_splitLinesA, list_splitLinesB):
+    return list(set(list_splitLinesA) & set(list_splitLinesB))
 
 def sentences(a, b):
     """Return sentences in both a and b"""
