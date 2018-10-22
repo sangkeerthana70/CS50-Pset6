@@ -47,7 +47,7 @@ def tokenize(s, n):
     return result
 
 
-# function to compare substring lists and return similar substrings
+# function to compare  two substring lists and return similar substrings
 def compare_lists(list1, list2):
     result = []
     for la in list1:
